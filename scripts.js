@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const logoContainer = document.querySelector('.logo-container');
     const logo = document.getElementById('logo');
     const navBar = document.querySelector('.nav-bar');
-    
+
     // Check if we're on portfolio learn more pages
     if (window.location.pathname.endsWith('/one-heart.html') || window.location.pathname.endsWith('/myfarm.html') || window.location.pathname.endsWith('/nutrient-deficiencies-in-wheat.html') || window.location.pathname.endsWith('/analyzing-acuity.html')) {
         // Skip animation
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navBar.classList.add('show');
     } else {
         // Animation for main page
-        document.addEventListener('scroll', function() {
+        document.addEventListener('scroll', function () {
             const doodles = document.querySelectorAll('.doodle');
             const scrollPosition = window.scrollY;
 
